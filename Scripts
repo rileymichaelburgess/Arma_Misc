@@ -1,0 +1,20 @@
+## Scripts for arma 3
+
+Title Objects Arma http://www.color-hex.com/ 
+this addAction ["<t color='#004EFF'>Bravo</t>", {["`close",false] spawn BIS_fnc_arsenal}]; This allowdamage false;
+
+Opening text (like Igie load)
+titletext ["MISSION NAME    By: Author name","plain"];
+
+Object Arsenal http://www.color-hex.com/
+this addAction ["<t color='#004EFF'>Arsenal</t>", {["Open",true] spawn BIS_fnc_arsenal}]; This allowdamage false;
+
+Add an Image
+This setObjectTexture [0, "textures\Donate.jpg"]; This allowdamage false;
+
+Push Boats( http://www.armaholic.com/page.php?id=23249 )
+this addAction ["<t color='#FF9900'>Push</t>","scripts\BoatPush.sqf",[],-1,false,true,"","_this distance _target < 8"];
+
+my_factory
+nul = [my_factory, -1, nil, ["fortifications"]] execVM "R3F_LOG\USER_FUNCT\init_creation_factory.sqf";
+
